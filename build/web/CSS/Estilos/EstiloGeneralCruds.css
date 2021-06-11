@@ -1,0 +1,265 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-may-2021, 22:37:05
+    Author     : bailarina77
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+@font-face {
+    font-family:'HeydingsCommonIconsRegular';
+    src: url('http://ianfarb.com/random/heydings_icons-webfont.eot');
+    src: url('http://ianfarb.com/random/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.woff') format('woff'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.ttf') format('truetype'),
+         url('http://ianfarb.com/random/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {    margin: 0;
+  padding: 0;}
+
+body   {  background:#3244E6;}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+li
+{  list-style:none;
+   }
+
+li a
+    { display:block;
+      float:left;
+      width:15%;
+      padding:55px 0;
+      text-align:center;
+      font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+      font-weight:700;
+      letter-spacing:1px;
+      font-size:40px;
+      color:#fff;
+      background:#ccc;
+      text-decoration:none;
+      text-transform:uppercase;
+      text-shadow:2px 2px 0 rgba(0,0,0,.25);
+      transition:.25s;}
+
+li a:hover  {
+      margin:-10px 0 0 0;
+}
+
+.menu
+    {  width:800px;
+       margin:60px auto 0 auto;
+       border-radius:10px;
+       overflow:hidden;}
+       
+.menu li:first-child a {  background:#ffca6d !important;}
+.menu li:nth-child(2) a {  background:#ff6d6d !important;}
+.menu li:nth-child(3) a {  background:#6dffb9 !important;}
+.menu li:nth-child(4) a {  background:#6dcaff !important;}
+.menu li:nth-child(5) a {  background:#ec6dff !important;}
+.menu li:nth-child(6) a {  background:#fff06d !important;}
+
+
+
+.menu li:first-child:hover ~ .bg {
+  background: #ffca6d;
+  
+}
+.menu li:nth-child(2):hover ~ .bg {
+  background: #ff6d6d;
+}
+.menu li:nth-child(3):hover ~ .bg {
+  background: #6dffb9;
+}
+.menu li:nth-child(4):hover ~ .bg {
+  background: #6dcaff;
+}
+.menu li:nth-child(5):hover ~ .bg {
+  background: #ec6dff;
+}
+.menu li:nth-child(6):hover ~ .bg {
+  background: #fff06d;
+}
+    
+
+.titulo{
+    font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+    font-size: 20pt;
+    color: white;
+    margin-left:600px;
+    
+}
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #EB1016;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+
+content: '\00bb';   /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.contenedor{
+  margin-left: 720px;
+}
+
+
+
+
+/*PARA LA CAJA*/
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+	padding: 10px;
+}
+.search-wrapper {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+.search-box {
+	width: 80%;
+	border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+}
+.search-box:focus {
+	box-shadow: 0 0 15px 5px #b0e0ee;
+	border: 2px solid #bebede;
+}
+
+
+/*PA LA TABLA*/
+.container {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 1500px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 10px;
+	background-color: rgba(255,255,255,0.2);
+	color: #000000;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+table a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 119.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(0, 0, 0);
+}
+
+table li:last-child a {
+  margin-right: 0;
+}
+
+table a:link, a:visited, a:focus {
+  background: rgb(255, 255, 255);
+}
+
+table a:hover {
+  background: rgb(43, 200, 228);
+}
+
+table a:active {
+  background: red;
+  color: white;
+}

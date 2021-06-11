@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sabores</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Last-Modified" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Estilos/EstiloGeneralCruds.css">
+    </head>
+    <body>
+        
+        
+        <ul class="menu">
+          <li><a href="Admin_PAG.html">PRO</a></li>
+          <li><a href="sabores.html">HS</a></li>
+          <li><a href="promociones.html">HP</a></li>
+          <li><a href="cantidad.html">HC</a></li>
+          <li><a href="tamano.html">HT</a></li>
+          <li><a href="formato.html">HF</a></li>
+          <li class="bg"></li>
+        </ul>
+         
+        
+        <div class="titulo">
+            <H1>OFERTAS BEN&JERRY'S</H1>
+        </div>
+        
+        
+            
+            <div class="search-wrapper">
+                    <form    method="POST" action="../guardarPromocion" >
+                    <input type="text" name="promocion" required class="search-box"  id="promocion" placeholder="Ingresa la promocion"/>
+                            <button type="submit" id="registrar">Registrar</button>
+                    </form>
+            </div>
+          
+        
+        
+        
+      <div class="contenedor">
+      <button   onClick="window.location = '../JSP/PRODUCTOS/Promociones/consultarPromociones.jsp';" class="button button2">Consultar Promociones</button>
+      </div> 
+        
+         
+    </body>
+</html>

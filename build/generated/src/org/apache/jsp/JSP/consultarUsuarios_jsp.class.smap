@@ -1,0 +1,18 @@
+SMAP
+consultarUsuarios_jsp.java
+JSP
+*S JSP
+*F
++ 0 consultarUsuarios.jsp
+JSP/consultarUsuarios.jsp
+*L
+5,42:47
+47,3:90
+49,3:93
+52,4:96,3
+56:108
+57,5:109,3
+62,3:124
+65,2:128
+66,14:130
+*E

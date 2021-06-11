@@ -1,0 +1,16 @@
+SMAP
+consultarCantidades_jsp.java
+JSP
+*S JSP
+*F
++ 0 consultarCantidades.jsp
+JSP/PRODUCTOS/Cantidades/consultarCantidades.jsp
+*L
+5,37:47
+42,3:85
+44,3:88
+47,5:91,3
+52,3:106
+55,2:110
+56,25:112
+*E

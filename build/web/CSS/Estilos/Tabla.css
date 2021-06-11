@@ -1,0 +1,290 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-may-2021, 21:27:01
+    Author     : bailarina77
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+/*
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	/*background-image: url(https://ae01.alicdn.com/kf/Hd1283f91f5ce486393d59a02aa46da319/HUAYI-Fondo-de-fotograf-a-de-pared-de-ladrillo-rosa-retratos-de-beb-foto-fiesta-fotomat.jpg);
+	background-color: #da1fff;
+	/*background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+	max-height: none;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+*/
+
+
+/*
+.container {
+	position:static;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	position: absolute;
+	overflow:scroll;
+	width: 1500px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 10px;
+	background-color: rgba(255,255,255,0.2);
+	color: #000000;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 119.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: rgb(0, 0, 0);
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+  background: rgb(255, 255, 255);
+}
+
+a:hover {
+  background: rgb(43, 200, 228);
+}
+
+a:active {
+  background: red;
+  color: white;
+}
+
+.menu{
+    position:relative;
+    display: block;
+}
+*/
+
+h1{
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  table{
+	width:100%;
+	height: 300px;
+	table-layout: fixed;
+  }
+  .tbl-header{
+	background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+	height:500px;
+	overflow-x:auto;
+	margin-top: 0px;
+	border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+	padding: 20px 15px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+  }
+  td{
+	padding: 15px;
+	text-align: left;
+	vertical-align:middle;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+  
+  /* demo styles */
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  body{
+	/*background: -webkit-linear-gradient(left, #f73ef7, #ac23fc);
+	background: linear-gradient(to right, #f73ef7, #ac23fc);*/
+	background: #62c0ff;
+	
+	font-family: 'Oswald', sans-serif;
+  }
+  section{
+	margin: 50px;
+  }
+  
+  
+
+  
+  
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+	  width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }
+
+
+
+
+
+  a {
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	width: 39.5%;
+	margin-right: 0.625%;
+	text-align: center;
+	line-height: 3;
+	color: white;
+  }
+  
+  li:last-child a {
+	margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+	background: #62c0ff;
+  }
+  
+  a:hover {
+	background: #62c0ff;
+  }
+  
+  a:active {
+	background: red;
+	color: white;
+  }
+
+
+
+  
+li
+{  list-style:none;
+   }
+
+li a
+    { display:block;
+      float:left;
+      width:70%;
+	  margin-left:90px ;
+      padding:25px 0;
+      text-align:center;
+      font-family: 'HeydingsCommonIconsRegular', Helvetida Neue, sans-serif;
+      font-weight:700;
+      letter-spacing:1px;
+      font-size:40px;
+      color:#fff;
+      background:#ccc;
+      text-decoration:none;
+      text-transform:uppercase;
+      text-shadow:2px 2px 0 rgba(0,0,0,.25);
+      transition:.25s;
+}
+	 
+.menu
+    {  width:800px;
+       margin:60px auto 0 auto;
+       border-radius:10px;
+       overflow:hidden;
+	}
+       
+.menu li:first-child a {  background:#62c0ff !important;}
+.menu li:nth-child(2) a {  background:#ff6d6d !important;}
+.menu li:nth-child(3) a {  background:#6dffb9 !important;}
+.menu li:nth-child(4) a {  background:#6dcaff !important;}
+.menu li:nth-child(5) a {  background:#ec6dff !important;}
+.menu li:nth-child(6) a {  background:#fff06d !important;}
+
+
+
+.menu li:first-child:hover ~ .bg {
+  background: #62c0ff;
+  
+}
+
+
